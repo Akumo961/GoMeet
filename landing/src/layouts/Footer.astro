@@ -1,0 +1,38 @@
+---
+import { Icon } from "astro-iconify";
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="bg-white text-gray-600 py-12">
+  <div class="container mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pl-8">
+      <div class="col-span-1 md:col-span-2">
+        <a href="https://github.com/Ali-El-Sayed" class="flex items-center mb-4">
+          <span class="text-xl font-bold text-green-3">Ali El-Sayed Ali</span>
+        </a>
+        <p class="mb-4">GoMeet is a lightweight, powerful meeting recorder and summarizer.</p>
+        <p class="text-sm">&copy; {currentYear} Ali El-Sayed Ali. All rights reserved</p>
+        <div class="flex space-x-4 my-4">
+          <a href="https://github.com/Ali-El-Sayed" target="_blank">
+            <Icon name="radix-icons:github-logo" class="w-4 h-4 text-gray-600 hover:text-gray-500 dark:text-neutral-200"/>
+          </a>
+        </div>
+      </div>
+      <div>
+        <h3 class="font-semibold text-gray-900 mb-4">Products</h3>
+        <ul class="space-y-2">
+          <li><a href="https://github.com/Ali-El-Sayed/GoMeet" class="hover:text-green-3">GoMeet</a></li>
+          <li><a href="https://github.com/Ali-El-Sayed/GoMeet/issues" target="_blank" rel="noopener noreferrer" class="hover:text-green-3">↳ Get Involved</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-semibold text-gray-900 mb-4">Help</h3>
+        <ul class="space-y-2">
+          <li><a href="/docs#faq" class="hover:text-green-3">FAQs</a></li>
+          <li><a href="/docs#tos" class="text-sm mr-4 hover:text-green-3">Terms of Service</a></li>
+          <li><a href="/docs#policy" class="text-sm hover:text-green-3">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
