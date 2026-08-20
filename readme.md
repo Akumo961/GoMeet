@@ -1,53 +1,102 @@
-# GoMeet 🔎 | Meeting Recorder & Summarizer
-
-Easily record and extract the most important information from your meetings in English, French, and Chinese!
-
-[Download the app here](https://github.com/Ali-El-Sayed/GoMeet/releases/latest)
-
-Supported platform: MacOS, Windows
-- The app is not signed, you will need to allow the app in the security settings of your OS.
-
-GoMeet was originally developed as an internal tool to help me record and summarize the endless stream of meetings. Previous versions are not public but I'm planning to continue development here and make it available to everyone! :)
+# GoMeet
 
 
-## API token needed: 
-Enter your API token in the app settings to use the transcription feature.
-1. AssemblyAI: [link](https://www.assemblyai.com/)
-2. OpenAI API: [link](https://openai.com/)
-3. _Optional_ Affinity API: [link](https://www.affinity.co/)
+> Replace this description with the repository's verified one-line purpose and primary engineering technologies.
 
-## Disclaimer:
-Please be aware that recording meetings without consent may not be legal in all regions. By using GoMeet for meeting recording and summarization, you acknowledge and agree that it is your responsibility to comply with all relevant laws and regulations regarding recording conversations. The developer of GoMeet provides no legal guarantees or assurances regarding the legality of recording meetings in your jurisdiction. The use of GoMeet is at your own risk, and the developer accepts no liability for any misuse or legal consequences arising from the use of the application.
 
-## App Demo
-![Recording](./docs/recording.png "Recording view")
-![Meeting](./docs/meeting.png "Meeting view")
+## Overview
 
----
 
-### FFMPEG Binary needed as it is bundle with the app
-Add you platform here: 
+Describe the problem GoMeet solves, who it is for, and what you built.
+
+
+## Key Capabilities
+
+
+- Add only capabilities actually implemented in the repository.
+
+- Highlight the strongest user-facing functionality.
+
+- Highlight meaningful backend or AI functionality.
+
+
+## Architecture
+
+
+Add an architecture diagram based on the actual repository structure.
+
+
+```text
+
+User
+
+ │
+
+ ▼
+
+Frontend
+
+ │
+
+ ▼
+
+API / Application Layer
+
+ │
+
+ ├── Service(s)
+
+ ├── Database
+
+ └── AI / External Services (if applicable)
+
 ```
-src-tauri/bin/ffmpeg-aarch64-apple-darwin
-src-tauri/bin/ffmpeg-x86_64-apple-darwin
-src-tauri/bin/ffmpeg-x86_64-pc-windows-msvc.exe
-```
-_Tips_: `which ffmpeg` to find the path of your ffmpeg binary and `cp /path/to/ffmpeg /path/to/watson/src-tauri/bin/ffmpeg-{{platform}}`
 
-### Start App
 
-#### Install dependencies
-```
-cargo install tauri-cli --version "^1.0.0" --locked
-npm install
-```
+## Engineering Decisions
 
-#### Run the app
-```
-cargo tauri dev
-cargo tauri build
-```
 
-### Quick link
-- Auto-update [docs](https://tauri.app/v1/guides/distribution/updater/)
-- Async process in Rust + communication with webview [link](https://rfdonnelly.github.io/posts/tauri-async-rust-process/)
+Explain the most important architectural decisions and why they were made.
+
+
+## Technology Stack
+
+
+List only technologies actually used by the repository.
+
+
+## Deployment
+
+
+Document the actual local and production deployment process.
+
+
+## Testing
+
+
+Document the actual test strategy and commands.
+
+
+## Project Structure
+
+
+Show the important directories and explain their responsibilities.
+
+
+## Results / Impact
+
+
+Add only verified metrics such as users, requests, latency, accuracy, or other measurable outcomes.
+
+
+## Future Improvements
+
+
+List realistic next steps based on the current implementation.
+
+
+## Disclaimer
+
+
+Document any limitations or assumptions relevant to the project.
+
